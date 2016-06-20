@@ -1,0 +1,47 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Сложение чисел.</title>
+ <style type="text/css">
+         body { background-color: white }
+
+         .text1 { font-size: 18pt; color: black; font-family: "Times New Roman"; font-weight: 100 }
+
+         .text2 { font-size: 30pt; color: black; font-family: "Times New Roman"; font-weight: 900 }
+         .onlydiv { text-align:center }
+        .bottomdiv { margin-top:39%;text-align:center}
+        .result { text-align:center;font-size:18pt}
+
+      </style>
+      <script type="text/javascript">
+      function tosum() {
+    	  var pole1_value=Number(document.forms["form"].pole1.value);
+    	  var pole2_value = Number(document.forms["form"].pole2.value);
+
+		  res = pole1_value + pole2_value;
+		  result.innerHTML = "Результат сложения двух чисел: " + res;
+		  return res;
+
+    	}
+      </script>
+
+</head>
+<body>
+<div class = "onlydiv">
+
+<p><font class = "text1">JavaScript. Задание №1.</font>
+<p><font class = "text1">Введите два числа</font>
+ <form name = "form">
+ <input type = "text" name="pole1">
+ <input type = "text" name="pole2">
+ <input type = "button" value="Ввод" name="but" id="Button1" onclick="tosum();">
+ </form>
+ </div>
+<div id = "result" class = "result">
+
+</div>
+<div class = "bottomdiv">
+<p><font class = "text1">Выполнила Захарова Л.</font>
+</div>
+</body>
+</html>

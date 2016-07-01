@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+  //структура для описания сущности user
+  function User(login) {
+    this.login = login;
+    this.role='user';
+    alert(this.login);
+  }
+  var reqCounter = 0;
+
+  //структура для описания сущности заявка (Request)
+  function Request(client,desc,prior,performer,deadline,readiness) {
+    this.number = reqCounter+1;
+    this.client = client;
+    this.desc = desc;
+    this.prior = prior;
+    this.performer = performer;
+    this.deadline = deadline;
+    this.readiness = readiness;
+
+    }
+    //структура для описания сущности Комментарий
+    function Comment(user,date,comment){
+        this.user = user;
+        this.date = date;
+        this.comment = comment;
+
+    }
+</script>
+
+
+
+  </body>
+</html>
